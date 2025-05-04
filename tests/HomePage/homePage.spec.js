@@ -33,6 +33,7 @@ test.describe('Home Page Tests', () => {
         await mainPage.homePage.verifyTagInCard('Implement user authentication', 'Feature', 'High Priority');
     });
 
+
     test('Test Case 2', async () => {
 
         // Login to the application
@@ -76,9 +77,9 @@ test.describe('Home Page Tests', () => {
 
         // Navigate to the Web Application
         await mainPage.homePage.waitForURL(); // This does nothing at the moment because the URL doesn't change between sections
-        await mainPage.homePage.webApplicationsButton.click();
-        await expect(mainPage.homePage.webApplicationTitle).toBeVisible({ timeout: 3000 });
-        await expect(mainPage.homePage.webApplicationSubtitle).toBeVisible({ timeout: 3000 });
+        await mainPage.homePage.mobileApplicationsButton.click();
+        await expect(mainPage.homePage.mobileApplicationTitle).toBeVisible({ timeout: 3000 });
+        await expect(mainPage.homePage.mobileApplicationSubtitle).toBeVisible({ timeout: 3000 });
 
         // Verify "Implement user authentication" is in the "To Do" column.
         await mainPage.homePage.verifyCardInColumn('To Do', 'Push notification system');
@@ -94,9 +95,9 @@ test.describe('Home Page Tests', () => {
 
         // Navigate to the Web Application
         await mainPage.homePage.waitForURL(); // This does nothing at the moment because the URL doesn't change between sections
-        await mainPage.homePage.webApplicationsButton.click();
-        await expect(mainPage.homePage.webApplicationTitle).toBeVisible({ timeout: 3000 });
-        await expect(mainPage.homePage.webApplicationSubtitle).toBeVisible({ timeout: 3000 });
+        await mainPage.homePage.mobileApplicationsButton.click();
+        await expect(mainPage.homePage.mobileApplicationTitle).toBeVisible({ timeout: 3000 });
+        await expect(mainPage.homePage.mobileApplicationSubtitle).toBeVisible({ timeout: 3000 });
 
         // Verify "Implement user authentication" is in the "To Do" column.
         await mainPage.homePage.verifyCardInColumn('In Progress', 'Offline mode');
@@ -112,9 +113,9 @@ test.describe('Home Page Tests', () => {
 
         // Navigate to the Web Application
         await mainPage.homePage.waitForURL(); // This does nothing at the moment because the URL doesn't change between sections
-        await mainPage.homePage.webApplicationsButton.click();
-        await expect(mainPage.homePage.webApplicationTitle).toBeVisible({ timeout: 3000 });
-        await expect(mainPage.homePage.webApplicationSubtitle).toBeVisible({ timeout: 3000 });
+        await mainPage.homePage.mobileApplicationsButton.click();
+        await expect(mainPage.homePage.mobileApplicationTitle).toBeVisible({ timeout: 3000 });
+        await expect(mainPage.homePage.mobileApplicationSubtitle).toBeVisible({ timeout: 3000 });
 
         // Verify "Implement user authentication" is in the "To Do" column.
         await mainPage.homePage.verifyCardInColumn('Done', 'App icon design');

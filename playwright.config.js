@@ -8,7 +8,6 @@ dotenv.config({ path: path.resolve(__dirname, './.env') });
 export default defineConfig({
     testDir: './tests', // Directory where your tests are located
     timeout: 30000, // Timeout for each test in milliseconds
-    retries: 1, // Number of retries on failure
     use: {
         headless: true, // Run tests in headless mode
         baseURL: 'https://animated-gingersnap-8cf7f2.netlify.app/', // Base URL for tests
